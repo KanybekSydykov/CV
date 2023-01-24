@@ -1,0 +1,92 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+.name{
+    font-size: 72px;
+    line-height: normal;
+}
+
+@media (min-width:900px) {
+    .name{
+        font-size: 58px;
+        font-stretch: condensed;
+        display: block;
+    }
+
+
+}
+
+@media (max-width:900px) {
+        
+    .list-group-item{
+        text-align: center;
+    }
+
+    .title{
+        text-align: center;
+    }
+}
+
+.img-container {
+    background-image: url(./assets/IMG_5169.JPG);
+    background-position: 50% 0%;
+    background-size: cover;
+    scale: 1.1;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    height: 160px;
+}
+
+.icon-container{
+    width: 22px;
+    height: 22px;
+    color: black;
+}
+
+.personal__links{
+    text-decoration: none;
+    color: white;
+}
+
+.personal__links:active{
+    color: white;
+}
+
+.personal__links svg{
+    margin-bottom: 5px;
+}
+
+.contacts{
+    border: 1px solid white;
+}
+
+.list-group-item{
+    background: transparent;
+    color: white;
+}
+
+.list-group-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.list-group-item a:active{
+    color: white;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
