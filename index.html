@@ -194,8 +194,8 @@
       window.html2canvas = window.html2canvas;
       
       const elementToPdf = document.getElementById('cv');
-      const width = elementToPdf.clientWidth;
-      const height = elementToPdf.clientHeight;
+      const width = elementToPdf.clientWidth - 200;
+      const height = elementToPdf.clientHeight-300;
       const saveBtn = document.getElementById('savePdf')
       console.log(elementToPdf);
       saveBtn.addEventListener('click',(e)=>{
