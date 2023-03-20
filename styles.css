@@ -9,17 +9,46 @@ body{
     line-height: normal;
 }
 
+#savePdf{
+    display: block;
+        position: absolute;
+        padding: 10px 15px;
+        /* background-color: rgba(6, 135, 58, 0.5);
+        color: white;
+        border: 1px solid green;
+        border-radius: 10px;
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.3; */
+        font-size: 32px;
+        font-weight: bold;
+}
+
 @media (min-width:900px) {
     .name{
         font-size: 58px;
         font-stretch: condensed;
         display: block;
     }
+    #savePdf{
+        
+        right: -80px;
+        top: 25px;
 
+    }
 
 }
 
+
+
 @media (max-width:900px) {
+    #savePdf{
+        top: 100%;
+        width: 100%;
+        border-radius: 0px;
+    }
+   
+
         
     .list-group-item{
         text-align: center;
