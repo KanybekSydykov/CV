@@ -189,7 +189,7 @@
       window.html2canvas = window.html2canvas;
       
       const elementToPdf = document.getElementById('cv');
-      const width = elementToPdf.clientWidth;
+      const width = elementToPdf.clientWidth - 150;
       const height = elementToPdf.clientHeight-300;
       const saveBtn = document.getElementById('savePdf')
       saveBtn.addEventListener('click',(e)=>{
@@ -201,8 +201,6 @@
         }).then(canvas=>{
           let img = canvas.toDataURL('image/jpeg',1.0)
           let doc = new jsPDF('p', 'pt', [width,height]);
-          doc.addFont("Helvetica");
-          doc.setFont("Helvetica");
           doc.addImage(img,"JPG",0,0,width,height)
           doc.save('KanybekSydykov CV.pdf')
         })
