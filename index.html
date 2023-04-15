@@ -108,10 +108,13 @@
             <p class=" fw-bold fs-5 p-0 m-0">Front End Development </p>
             <span>Self studied on web:</span> 
             <ul class="list-group list-group-flush">
-              <li class="list-group-item"><a href="http://freecodecamp.org" target="_blank">freecodecamp.org</a></li>
-              <li class="list-group-item"><a href="http://udemy.com" target="_blank">Udemy.com</a></li>
-              <li class="list-group-item"><a href="http://youtube.com" target="_blank">Youtube.com</a></li>
-           
+              <li class="list-group-item d-flex flex-column"><span>Course: JavaScript - The Complete Guide 2023 (Beginner + Advanced)
+</span><span>
+                by : Maximilian Schwarzmüller</span></li>
+              <li class="list-group-item d-flex flex-column"><span>Course: React - The Complete Guide (incl Hooks, React Router, Redux)
+
+</span><span>
+                by : Maximilian Schwarzmüller</span></li>
             </ul>
           </div>
 
@@ -146,7 +149,7 @@
             <span class="d-block fs-4">Company: TataDev</span>
           <span class="d-block fs-6">Location: Bishkek,Kyrgyzstan</span>
           <div class="row mb-4 justify-content-between mx-0 p-0 border-bottom border-1">
-            <span class="col-lg-6 col-12 fs-5 text-center">Position: Front-end Developer</span> <span class="col-lg-6 col-12 fs-5 text-center">Start Date : 08/2020 </span>
+            <span class="col-lg-4 col-12 fs-5 text-start">Position: Front-end Developer</span> <span class="col-lg-4 col-12 fs-5 text-start">Start Date : 08/2020 </span>
           </div>
           </div>
           <div class="col-12">
@@ -155,21 +158,21 @@
           <span class="col-lg-6 col-12 fs-5">Type: Remote</span> 
           <div class="row mb-4 justify-content-between mx-0 p-0 border-bottom border-1">
             
-            <span class="col-lg-6 col-12 fs-5 text-center">Position: Dispatch</span> <span class="col-lg-6 col-12 fs-5 text-center">Period : 05/2019 - 07/2020</span>
+            <span class="col-lg-4 col-12 fs-5 text-start">Position: Dispatch</span> <span class="col-lg-4 col-12 fs-5 text-start">Period : 05/2019 - 07/2020</span>
           </div>
           </div>
           <div class="col-12">
             <span class="d-block fs-4">Company: Greiner s.r.o.</span>
           <span class="d-block fs-6">Location: Litvinov,Czech Republic</span>
           <div class="row mb-4 justify-content-between mx-0 p-0 border-bottom border-1">
-            <span class="col-lg-6 col-12 fs-5 text-center">Position: Mechanic</span> <span class="col-lg-6 col-12 fs-5 text-center">Period : 03/2018 - 02/2019</span>
+            <span class="col-lg-4 col-12 fs-5 text-start">Position: Mechanic</span> <span class="col-lg-4 col-12 fs-5 text-start">Period : 03/2018 - 02/2019</span>
           </div>
           </div>
           <div class="col-12">
             <span class="d-block fs-4">Company: InterGelpo LLC</span>
           <span class="d-block fs-6">Location: Bishkek,Kyrgyzstan</span>
           <div class="row mb-4 justify-content-between mx-0 p-0">
-            <span class="col-lg-6 col-12 fs-5 text-center">Position: Office Manager</span> <span class="col-lg-6 col-12 fs-5 text-center">Period : 08/2016 - 01/2018</span>
+            <span class="col-lg-4 col-12 fs-5 text-start">Position: Office Manager</span> <span class="col-lg-4 col-12 fs-5 text-start">Period : 08/2016 - 01/2018</span>
           </div>
           </div>
          
@@ -189,7 +192,6 @@
       const width = elementToPdf.clientWidth - 200;
       const height = elementToPdf.clientHeight-300;
       const saveBtn = document.getElementById('savePdf')
-      console.log(elementToPdf);
       saveBtn.addEventListener('click',(e)=>{
         e.preventDefault();
         html2canvas(elementToPdf,{
