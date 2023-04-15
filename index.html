@@ -201,6 +201,8 @@
         }).then(canvas=>{
           let img = canvas.toDataURL('image/jpeg',1.0)
           let doc = new jsPDF('p', 'pt', [width,height]);
+          doc.addFont("Helvetica");
+          doc.setFont("Helvetica");
           doc.addImage(img,"JPG",0,0,width,height)
           doc.save('KanybekSydykov CV.pdf')
         })
